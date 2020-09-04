@@ -6,6 +6,9 @@ import PackageDescription
 
 let package = Package(
     name: "danger-swift",
+    platforms: [
+        .macOS(.v10_12)
+    ],
     products: [
         .library(name: "Danger", type: .dynamic, targets: ["Danger"]),
         .library(name: "DangerFixtures", type: .dynamic, targets: ["DangerFixtures"]),
