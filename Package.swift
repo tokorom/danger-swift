@@ -16,6 +16,7 @@ let package = Package(
         .package(url: "https://github.com/shibapm/Logger", from: "0.1.0"),
         .package(url: "https://github.com/mxcl/Version", from: "1.0.0"),
         .package(url: "https://github.com/nerdishbynature/octokit.swift", from: "0.10.1"),
+        .package(url: "https://github.com/tokorom/danger-swift-format.git", from: "0.1.0"),
         // Danger Plugins
         // Dev dependencies
         .package(url: "https://github.com/shibapm/Komondor", from: "1.0.0"), // dev
@@ -28,8 +29,9 @@ let package = Package(
     targets: [
         .target(name: "Danger-Swift", dependencies: ["Danger"]), // dev
         .target(name: "DangerShellExecutor"),
+        .target(name: "DangerSwiftFormat"),
         .target(name: "DangerDependenciesResolver", dependencies: ["DangerShellExecutor", "Version", "Logger"]),
-        .target(name: "Danger", dependencies: ["OctoKit", "Logger", "DangerShellExecutor"]),
+        .target(name: "Danger", dependencies: ["OctoKit", "Logger", "DangerShellExecutor", "DangerSwiftFormat"]),
         .target(name: "RunnerLib", dependencies: ["Logger", "DangerShellExecutor"]),
         .target(name: "Runner", dependencies: ["RunnerLib", "Logger", "DangerDependenciesResolver"]),
         .target(name: "DangerFixtures", dependencies: ["Danger"]),
