@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/tokorom/danger-swift-format.git",
         "state": {
           "branch": null,
-          "revision": "d9bda768cc9d7cc51e362f11a5ce3ed5f4ecd18f",
+          "revision": "5c056b6ac9cb434f16d068ddcc1d3805e3c52a24",
           "version": "0.1.0"
         }
       },
@@ -159,8 +159,8 @@
         "repositoryURL": "https://github.com/SwiftDocOrg/swift-cmark.git",
         "state": {
           "branch": null,
-          "revision": "1168665f6b36be747ffe6b7b90bc54cfc17f42b7",
-          "version": "0.28.3+20200207.1168665"
+          "revision": "2a766030bee955b4806044fd7aca1b6884475138",
+          "version": "0.28.3+20200110.2a76603"
         }
       },
       {
