@@ -1,6 +1,8 @@
 import Danger
 import DangerSwiftFormat
 
+_ = Danger()
+
 do {
   try SwiftFormat.run { report in
     switch report.severity {
